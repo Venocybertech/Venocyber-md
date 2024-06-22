@@ -253,6 +253,39 @@ smd({
   }
 });
 smd({
+  pattern: "veno",
+  alias: ["veno", "cyber"],
+  category: "meme",
+  desc: "Finds info about song",
+  filename: __filename
+}, async (_0x570869, _0x5706ad) => {
+  try {
+    if (!_0x5706ad) {
+      return await _0x570869.send("*provide text!*");
+    }
+    const {
+      sleep: _0x569e63
+    } = require("../lib");
+    const _0x376671 = "./plugins/meme.say/veno.png";
+    const _0x421d98 = "./temp/veno.png";
+    const _0x4fbe21 = 20;
+    const _0x2c7e3b = 70;
+    const _0x355c11 = 500;
+    const _0x104f3a = 4;
+    const _0x2bbc60 = "20";
+    let _0x2c7d13 = await addTextToImage(_0x376671, _0x421d98, "  " + _0x5706ad, _0x4fbe21, _0x2c7e3b, _0x355c11, _0x104f3a, _0x2bbc60);
+    await _0x569e63(1500);
+    await _0x570869.bot.sendMessage(_0x570869.jid, {
+      image: {
+        url: _0x2c7d13
+      },
+      caption: Config.caption
+    });
+  } catch (_0x5c2f8f) {
+    return await _0x570869.error(_0x5c2f8f + "\n\n command: veno", _0x5c2f8f, "*_Didn't get any results, Sorry!_*");
+  }
+});
+smd({
   pattern: "imran",
   alias: ["tea", "kofi"],
   category: "meme",
