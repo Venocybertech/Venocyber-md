@@ -397,7 +397,28 @@ const {
       filename: __filename,
     },
     async (_0x1c0160, _0x482db1) => {
-        let astro = "ᴀsᴛᴀ ᴄʜᴀᴛ ʙᴏᴛ"
+        let astro = "ᴠᴇɴᴏᴄʏʙᴇʀ ᴍᴅ ᴄʜᴀᴛʙᴏᴛ"
+      try {
+        return _0x1c0160.reply(await aiResponce(_0x1c0160, "chat", _0x482db1));
+      } catch (_0x4adf95) {
+        await _0x1c0160.error(
+          _0x4adf95 + "\n\ncommand: chat",
+          _0x4adf95,
+          "*_no responce from chatbot, sorry!!_*"
+        );
+      }
+    }
+  );
+smd(
+    {
+      pattern: "venocyber",
+      desc: "chat with an AI",
+      category: "ai",
+      use: "<Hii, Venocyber>",
+      filename: __filename,
+    },
+    async (_0x1c0160, _0x482db1) => {
+        let astro = "ᴠᴇɴᴏᴄʏʙᴇʀ ᴍᴅ ᴄʜᴀᴛʙᴏᴛ"
       try {
         return _0x1c0160.reply(await aiResponce(_0x1c0160, "chat", _0x482db1));
       } catch (_0x4adf95) {
@@ -411,11 +432,11 @@ const {
   );
   smd(
     {
-      pattern: "venocyber",
-      alias: ["venocyber", "venocyber-tech"],
+      pattern: "dalle",
+      alias: ["dall", "dall-e"],
       desc: "chat with an AI",
       category: "ai",
-      use: "<Hii, Astro>",
+      use: "<Hii, Venocyber>",
       filename: __filename,
     },
     async (m, q) => {
