@@ -411,8 +411,8 @@ const {
   );
   smd(
     {
-      pattern: "dalle",
-      alias: ["dall", "dall-e"],
+      pattern: "venocyber",
+      alias: ["venocyber", "venocyber-tech"],
       desc: "chat with an AI",
       category: "ai",
       use: "<Hii, Astro>",
@@ -421,7 +421,7 @@ const {
     async (m, q) => {
       try {
         if (!q) {
-          return await m.reply("*Give Me A Query To Get Dall-E Response?*");
+          return await m.reply("*Give Me A Query To Get Venocyber ai Response?*");
         }
   
         const apiUrl = `https://api.maher-zubair.tech/ai/dalle?q=${encodeURIComponent(q)}`;
